@@ -1,0 +1,37 @@
+###
+GET http://localhost:8080/api/cursos
+
+###
+GET http://localhost:8080/api/cursos/1
+
+###
+GET http://localhost:8080/api/cursos/buscar?nombre=pro
+
+###
+POST http://localhost:8080/api/cursos
+Content-Type: application/json
+
+{
+    "name": "Programacion Orientada a Objetos",
+    "code": "P002",
+    "description": "Aqui aprenderas a programar ...",
+    "initDate": "2025-02-01",
+    "endDate": "2025-02-28",
+    "creditsNum": 4
+}
+
+### 
+PUT http://localhost:8080/api/cursos/1
+Content-Type: application/json
+
+{
+    "name": "Programacion Basica",
+    "code": "P001",
+    "description": "Aqui aprenderas a programar ...",
+    "initDate": "2025-01-07",
+    "endDate": "2025-01-31",
+    "creditsNum": 4
+}
+
+### 
+DELETE POST http://localhost:8080/api/cursos/1
