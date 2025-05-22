@@ -55,6 +55,8 @@ public class CourseServiceImpl implements CourseService {
 
     @Override
     public CourseResponse create(CourseRequest course) {
+        
+
         var entity = toEntity(course);
 
         var newCourse = courseRepository.save(entity);

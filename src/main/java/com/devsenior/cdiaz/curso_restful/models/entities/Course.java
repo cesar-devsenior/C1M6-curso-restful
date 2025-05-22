@@ -26,7 +26,7 @@ public class Course {
     private String name;
 
     // Código del curso (que idealmente debería ser único).
-    @Column(name = "code", nullable = false, unique = true)
+    @Column(name = "code", nullable = false, unique = true, length = 10)
     private String code;
 
     // Una descripción.

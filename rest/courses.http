@@ -20,13 +20,25 @@ Content-Type: application/json
     "creditsNum": 4
 }
 
+###
+POST http://localhost:8080/api/cursos
+Content-Type: application/json
+
+{
+    "name": "Programacion Funcional",
+    "code": "P0003",
+    "initDate": "202-01-07",
+    "endDate": "2025-01-31",
+    "creditsNum": 4
+}
+
 ### 
 PUT http://localhost:8080/api/cursos/1
 Content-Type: application/json
 
 {
     "name": "Programacion Basica",
-    "code": "P001",
+    "code": "P0001",
     "description": "Aqui aprenderas a programar ...",
     "initDate": "2025-01-07",
     "endDate": "2025-01-31",
